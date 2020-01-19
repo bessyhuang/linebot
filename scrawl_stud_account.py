@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as b
 
-payload = {'mail_id':'404040523', 'mail_pwd':'gibe258deny700'}
+payload = {'mail_id':'<studentID>', 'mail_pwd':'<password>'}
 rs = requests.session()
 res = rs.post('http://stu.fju.edu.tw/stusql/SingleSignOn/StuScore/SSO_stu_login.asp', data = payload)
 res2 = rs.get('http://stu.fju.edu.tw/stusql/SingleSignOn/StuScore/stu_scoreter.asp')
